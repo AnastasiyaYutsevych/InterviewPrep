@@ -6,5 +6,11 @@ def singleNumber(arr):
             return arr[i]
     return arr[-1]
 
+def singleNumber(arr):
+    ans = 0
+    for i in arr:
+        ans ^= i
+    return ans
+
 
 print(singleNumber([2,1,2]))
